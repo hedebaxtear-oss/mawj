@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.12);
+            max-width: 420px;
+        }
+
+        h1 {
+            color: #880e4f;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #444;
+            line-height: 1.6;
+        }
+
+        button {
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #d81b60;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        #hiddenMessage {
+            display: none;
+            margin-top: 25px;
+            color: #555;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Hey...</h1>
+        <p class="ablefocused"><i>i've always loved working on anything i do for you and i enjoy every second of it all. so i made this corner of the internet&nbsp;especially for you MJ &lt;3</i></p>
+
+
+        <button onclick="revealMessage()">Click Me</button>
+
+        <div id="hiddenMessage">
+            <i> i hope this place becomes a place for you to remember that <b>you are always loved‪ ‪♡</b></i>
+       </div> 
+    </div>
+
+    <script>
+        function revealMessage() {
+            var message = document.getElementById("hiddenMessage");
+            message.style.display =
+                message.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
+</body>
+</html>
